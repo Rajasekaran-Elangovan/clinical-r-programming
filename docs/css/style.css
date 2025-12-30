@@ -64,6 +64,9 @@ header {
   top: 0;
   z-index: 100;
 
+   padding: 2.5rem 1rem;
+  text-align: center;
+
   background: linear-gradient(
     135deg,
    /* #dedef2 0%,*/
@@ -73,9 +76,6 @@ header {
   );
   background-size: 200% 200%;
 
-  padding: 2.5rem 1rem;
-  text-align: center;
-
   border-bottom: 1px solid rgba(210, 210, 215, 0.6);
 
   backdrop-filter: saturate(180%) blur(20px);
@@ -83,9 +83,9 @@ header {
 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 
-  transition:
+  /* transition:
     padding 0.4s ease,
-    box-shadow 0.4s ease;
+    box-shadow 0.4s ease;*/
 
   animation: headerGradientShift 18s ease infinite;
 }
@@ -96,10 +96,10 @@ header h1 {
   margin-bottom: 0.6rem;
 
   transition:
-    opacity 0.3s ease,
-    transform 0.3s ease,
-    max-height 0.35s ease,
-    margin 0.35s ease;
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    /*max-height 0.35s ease,
+    margin 0.35s ease;*/
 }
 
 header p {
@@ -110,8 +110,8 @@ header p {
 
   transition:
     opacity 0.35s ease,
-    transform 0.35s ease,
-    font-size 0.35s ease;
+   /* font-size 0.35s ease,*/
+    transform 0.35s ease;
 }
 /* =========================================================
    HEADER SCROLL STATE (CSS-ONLY)
@@ -125,10 +125,11 @@ body.scrolled header {
 /* Hide H1 on scroll */
 body.scrolled header h1 {
   opacity: 0;
-  transform: translateY(-8px);
-  max-height: 0;
+  transform: translateY(-12px) scale(0.95);
+  pointer-events: none;
+ /* max-height: 0;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden;*/
 }
 
 /* Keep subtitle visible with fade */
@@ -199,14 +200,14 @@ main {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 3rem;
+  margin-top: 1rem;
 }
 
 .card {
   display: block;
   padding: 2rem;
-  border-radius: 18px;
+  border-radius: 20px;
 
   background: linear-gradient(
     135deg,
@@ -266,7 +267,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 5rem;
 }
 
 /* Header text */
@@ -282,21 +283,20 @@ footer {
 
 /* Logo */
 .header-logo img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 75px;
   border-radius: 50%;
-  border-color: #1d1d1f;
   object-fit: cover;
   transition: all 0.3s ease;
 }
 
 /* Shrink on scroll */
 #main-header.scrolled {
-  padding: 0.5rem 2rem;
+  padding: 0.15rem 1rem;
 }
 
 .header-logo img.shrink {
   width: 40px;
   height: 40px;
-  border: 1px solid #000;
+  border: 0.5px solid #000;
 }
