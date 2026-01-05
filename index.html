@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Capcontech: Clinical R Programming course</title>
-  
-  <!--include favicon -->
-  <link rel="icon" type="image/png" href="./docs/css/logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capcontech: Clinical R Programming course</title>
 
-  <!--External style sheet-->
-<link rel="stylesheet" href="./docs/css/style.css"/>
+    <!--include favicon -->
+    <link rel="icon" type="image/png" href="./docs/css/logo.png" />
 
-<script>
-  window.addEventListener("scroll", () => {
-    document.body.classList.toggle("scrolled", window.scrollY > 20);
-  });
-</script>
-</head>
+    <!--External style sheet-->
+    <link rel="stylesheet" href="./docs/css/style.css" />
 
-<body>
-  <header id="main-header">
-  <div class="header-content">
-    <div class="header-text">
-    <h1>Welcome to capcontechedu</h1>
-    <p>Clinical R Programming vignettes</p>
-  </div>
-    <div class="header-logo">
-      <img src="./docs/css/logo.png" alt="Logo" />
-    </div>
-  </div>
-</header>
+    <script>
+      window.addEventListener("scroll", () => {
+        document.body.classList.toggle("scrolled", window.scrollY > 20);
+      });
+    </script>
+  </head>
 
-<!--<main>-->
-  
-      <section class="section">
+  <body>
+    <header id="main-header">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Welcome to capcontechedu</h1>
+          <p>Clinical R Programming vignettes</p>
+        </div>
+        <div class="header-logo">
+          <img src="./docs/css/logo.png" alt="Logo" />
+        </div>
+      </div>
+    </header>
+
+    <!--<main>-->
+
+    <section class="section">
       <h2>About</h2>
-    <p>
-      Welcome to the Clinical R Programming Course by CAPCONTECH. This site contains the course materials, resources, and examples designed to help students and professionals learn R programming in the context of clinical data analysis.
-      <br><br>
-      Our goal is to provide a strong foundation in R, focusing on practical applications relevant to clinical domain.
-    </p>
+      <p>
+        Welcome to the Clinical R Programming Course by CAPCONTECH. This site
+        contains the course materials, resources, and examples designed to help
+        students and professionals learn R programming in the context of
+        clinical data analysis.
+        <br /><br />
+        Our goal is to provide a strong foundation in R, focusing on practical
+        applications relevant to clinical domain.
+      </p>
     </section>
-    
 
-        <section class="section">
+    <section class="section">
       <h2>Course Modules</h2>
 
       <div class="card-grid">
-
         <a href="./docs/CRP-datatypes.html" class="card">
           <h3>Module 1</h3>
-          <p>R Programming: Datatypes, variable naming, operators and objects in R.</p>
+          <p>
+            R Programming: Datatypes, variable naming, operators and objects in
+            R.
+          </p>
         </a>
 
         <a href="./docs/CRP-Indexing.html" class="card">
@@ -60,39 +65,40 @@
 
         <a href="./docs/CRP-strings.html" class="card">
           <h3>Module 3</h3>
-          <p>R Programming: Basic string ops, formatting , cleaning , wrangling strings, REGEX chars.</p>
+          <p>
+            R Programming: Basic string ops, formatting , cleaning , wrangling
+            strings, REGEX chars.
+          </p>
         </a>
-
       </div>
     </section>
 
     <section class="section">
       <h2>Contact</h2>
-    <p>
-      Contact us for personalised course or queries in email: <a href="capcontech.edu@gmail.com">capcontech.edu@gmail.com</a> 
-      or via <a href="https://github.com/capcontechedu" target="_blank">GitHub</a>.
-    </p>
+      <p>
+        Contact us for personalised course or queries in email:
+        <a href="capcontech.edu@gmail.com">capcontech.edu@gmail.com</a> or via
+        <a href="https://github.com/capcontechedu" target="_blank">GitHub</a>.
+      </p>
     </section>
 
-<!--</main>-->
-  <footer>
-    © 2025 CAPCONTECHEDU | Powered by GitHub Pages
-  </footer>
+    <!--</main>-->
+    <footer>© 2025 CAPCONTECHEDU | Powered by GitHub Pages</footer>
 
-  <script>
-  // Shrink logo on scroll
-  const header = document.getElementById('main-header');
-  const logo = document.querySelector('.header-logo img');
+    <script>
+      // Shrink logo on scroll
+      const header = document.getElementById("main-header");
+      const logo = document.querySelector(".header-logo img");
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-      logo.classList.add('shrink');
-    } else {
-      header.classList.remove('scrolled');
-      logo.classList.remove('shrink');
-    }
-  });
-</script>
-</body>
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+          logo.classList.add("shrink");
+        } else {
+          header.classList.remove("scrolled");
+          logo.classList.remove("shrink");
+        }
+      });
+    </script>
+  </body>
 </html>
